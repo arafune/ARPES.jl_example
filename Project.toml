@@ -1,0 +1,4 @@
+[deps]
+ARPES = "3764e38b-e87f-453d-b456-dc646f8e1bb8"
+Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
+WGLMakie = "276b4fcb-3e11-5398-bf8b-a0c2d153d008"
