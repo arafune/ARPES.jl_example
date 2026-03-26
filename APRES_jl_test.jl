@@ -21,7 +21,12 @@ begin
 end
 
 # ╔═╡ 1b009bce-f40e-4e75-a61f-1a55951540d7
-heatmap(data2)
+begin
+	phibin = Bins(10)
+	binned_data = groupby(data1,  phi => phibin)
+	bin_data_mean = mean.(binned_data)
+#	heatmap(bin_data_mean)
+end
 
 # ╔═╡ 6637ddfd-80b9-412a-8907-95e63b5b21c2
 Dict(metadata(data1))
