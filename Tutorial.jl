@@ -50,7 +50,7 @@ As noted above, the ARPESData is the thin wrapper of DimArray.
 
 Here, several important points about ARPESData are pointed out.
 
-* the dimensional name is internally predefined.
+* Some of the dimensional name are internally predefined.
 	* `phi`: Emission angle along the slit direction.
     * `psi`: Emission Angle perpendicular to the slit direction (For deflector type analyzer).
 	* `eV`: Energy (unit is "eV")
@@ -82,7 +82,15 @@ heatmap(data)
 md"""
 ## Data Manipulation
 
+### Selection
+
 All function defined in DimensionalData.jl must work on ARPESData, for data selection.
+
+
+
+### binning
+
+
 
 ### Smoothing
 For data smoothing, Kalman filter, boxcar, Savitzky-Golay, gaussian, and binomial filter are provided.  
@@ -134,10 +142,10 @@ end
 # ╠═64ed254e-28bf-11f1-9c50-87021769f2be
 # ╟─c23dbd62-ec44-43aa-a865-46711ea377a2
 # ╠═f68545b1-e548-4d9e-9a19-bb1560fa2ae4
-# ╠═131c0460-4a16-4323-9f62-177dc447af5f
+# ╟─131c0460-4a16-4323-9f62-177dc447af5f
 # ╟─98faf1fe-06d0-4463-bd8a-1968f07b19db
 # ╠═9a346493-7629-4fac-90f4-ec5b34738da3
-# ╟─29fab7f0-8c8d-4008-89db-3d003ec65ed8
+# ╠═29fab7f0-8c8d-4008-89db-3d003ec65ed8
 # ╠═bedb2ef2-6a42-40cd-961f-9a7070f6ed3f
 # ╟─cc3e77f5-b4f5-462e-a1a4-962697124b28
 # ╠═631ea681-d3be-4437-81f3-dd2abb19c363
