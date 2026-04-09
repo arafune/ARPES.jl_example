@@ -8,6 +8,9 @@ using InteractiveUtils
 begin
 	using Pkg
 	Pkg.develop(path=expanduser("~/src/ARPES.jl/"))
+	# or 
+	# Pkg.add(url="https://github.com/arafune/ARPES.jl")
+	# An error from LigGit might occur, but you can ignore it.
 	using ARPES
 	using GLMakie
 	using DimensionalData
@@ -166,9 +169,6 @@ For identifying dispersive features and band positions, the following derivative
 - Minimum-Gradient Analysis: Useful for tracking band dispersion by locating local minima in the gradient.
 """
 
-# ╔═╡ c43b8723-cde9-4354-9627-c29b187c77b8
-
-
 # ╔═╡ cc3e77f5-b4f5-462e-a1a4-962697124b28
 md"""
 ## Momentum Conversion
@@ -199,14 +199,13 @@ end
 # ╟─86986ec4-5186-4b11-abc6-8db4bf86cab8
 # ╠═64ed254e-28bf-11f1-9c50-87021769f2be
 # ╟─c23dbd62-ec44-43aa-a865-46711ea377a2
-# ╠═f68545b1-e548-4d9e-9a19-bb1560fa2ae4
-# ╠═131c0460-4a16-4323-9f62-177dc447af5f
+# ╟─f68545b1-e548-4d9e-9a19-bb1560fa2ae4
+# ╟─131c0460-4a16-4323-9f62-177dc447af5f
 # ╟─98faf1fe-06d0-4463-bd8a-1968f07b19db
 # ╠═9a346493-7629-4fac-90f4-ec5b34738da3
-# ╠═29fab7f0-8c8d-4008-89db-3d003ec65ed8
+# ╟─29fab7f0-8c8d-4008-89db-3d003ec65ed8
 # ╟─bedb2ef2-6a42-40cd-961f-9a7070f6ed3f
-# ╠═dc548a3e-8577-4052-a26e-10f03c140a43
-# ╠═c43b8723-cde9-4354-9627-c29b187c77b8
+# ╟─dc548a3e-8577-4052-a26e-10f03c140a43
 # ╟─cc3e77f5-b4f5-462e-a1a4-962697124b28
 # ╠═631ea681-d3be-4437-81f3-dd2abb19c363
 # ╠═95cfa197-76f4-4a5a-a664-777cda8f98b8
